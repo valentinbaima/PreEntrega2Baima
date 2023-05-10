@@ -1,0 +1,260 @@
+/* General */
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box  ;
+}
+@font-face{
+    font-family: Warbones;
+    src: url(./assets/ttf/Warbones.ttf) format(truetype);
+    font-weight: warbones;
+}
+
+/* MEDIA */
+@media (min-width : 700) {
+    .navbar_mobile-container {
+        display: none;
+        }
+    .navbar_container {
+            width: 100%;
+            z-index: 1;
+            position: fixed;
+            display: flex;
+            height: 60px;
+            background-color: darkgray;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 1px 1px 6px #000;
+ }
+.navbar_lista ul {
+            padding: 0px;
+ }
+.navbar_lista ul {
+            margin-bottom: 0px;
+ }
+ .navbar_lista li {
+    display: inline-block;
+    padding-left: 50px;
+ }
+ .navbar_lista a { 
+                font-family: Warbones;
+                vertical-align: middle;
+                color: rgb(255, 255, 255);
+                font-size: 20px;
+                line-height: 20px;
+                text-decoration: none;
+                align-items: center;
+                transition:  ease 0.2s;
+            }
+
+}
+
+@media (max-width : 700px) {
+ 
+    .navbar_container {
+        display: none;
+    }
+
+    .navbar_mobile-container {
+        display: flex;
+        justify-content: flex-end;
+        background-color: black;
+        height: 60px;
+        align-items: center;
+    
+    }
+    
+    
+    }
+/* Header */
+header{
+    background-color: black;
+}
+header h1 {
+    color: white;
+    font-family:"Warbones";
+    font-size: 50px;
+  
+}
+header a img{
+    width: 300px;
+    height: 200px;
+    padding: 5px;
+}
+nav{
+    background-color: darkgrey;
+    font-family:"Warbones" ; 
+    padding: 50px;
+    position: sticky;
+    bottom: 0;
+    }
+    
+.navbar_lista {
+    list-style: none;
+    display: flex;
+    gap: 100px;
+    justify-content: center;
+}
+.navbar_lista a {
+   color: white;
+   text-decoration: none;
+    font-family:"Warbones";
+    font-size: 44px;  
+}
+.navbar_lista ul li a:hover{
+    color: red;
+}
+/* Main */
+main{
+  padding: 40px;
+}
+.nuestros-destacados{
+    font-family: "Warbones";
+    color: red;
+    font-size: 4rem;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+
+.Destacado{
+    width: 20%;
+    background-color: red;
+    padding: 10px;
+    border-radius: 10px;
+    display: inline-block;
+    margin-inline: 20px;
+    margin-block: 30px;
+}
+.destacado-imagen{
+    width: 100%
+}
+.destacado-titulo{
+font-size: 24px;
+}
+.destacado-precio{
+    font-size: 24px;
+    padding: 10px;
+}
+.destacado-imagen,
+.destacado-titulo,
+.destacado-precio{
+    margin-bottom: 10px;
+}
+
+.contenedor-map{
+    margin-top: 100px;
+    padding: 20px;
+
+}
+.map{
+    font-family: "Warbones" ;
+    font-size: 24px;
+    display: flex;
+    margin: 20px;
+    padding: 20px;
+}
+.texto{
+    padding: 30px;
+    
+}
+/* footer */
+.footer{
+    background-color: black;
+    padding: 3.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-bottom: 2rem;
+    color: white;
+    font-size: 2rem;
+    text-align: center;
+}
+/* formulario */
+@media (max-width: 1024px) {
+
+    .Formulario {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap:  10px;
+        align-content: center;
+     }
+    }
+    
+    @media (min-width: 1024px) {
+        .Formulario {
+            display: flex;
+            justify-content: center;
+            gap:  500px;
+            align-content: center;
+         }
+         
+    }
+
+.formulario {
+    font-family:"Warbones";
+    
+}
+.formulario h1{
+    text-align: center;
+    padding: 0 0 20px 0 ;
+    border-bottom: 1px solid silver;
+} 
+.formulario form{
+    padding: 0 40px;
+    box-sizing: border-box;
+}
+form .username{
+    position: relative;
+     border-bottom: 2px solid #adadad;
+     margin: 30px 0;
+}
+.username input{
+    width: 100%;
+    padding: 0 5px;
+    height: 40px;
+    font-size: 16px;
+    border: none;
+    background: none;
+    outline: none;
+}
+.username label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    color: #adadad;
+    transform:translateY(-50%);
+    font-size: 16px;
+    pointer-events: none;
+}
+.recordar{
+    margin: -5px 0 20px 5px;
+    color: blue;
+    cursor: pointer;
+}
+.recordar:hover{
+    text-decoration: underline;
+}
+input{
+    width: 100%;
+    height: 50px;
+    border: 1px solid;
+    background-color: red;
+    font-size: 16px;
+    color: white;
+    cursor: pointer;
+    outline: none; 
+}
+.registrarse{
+margin: 30px 0;
+text-align: center;
+font-size: 16px;
+color: black;
+}
+.registrarse a {
+    color: red;
+    text-decoration: none;
+}
+.registrarse a:hover{
+    text-decoration: underline;
+}
+
